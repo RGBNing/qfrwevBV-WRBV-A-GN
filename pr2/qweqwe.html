@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        #res .block {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            margin: 10px
+            
+        }
+      </style>
+      <script>
+        function show()
+        var count = document.getElementById('count');
+        count = Number(count.value)
+        var res = document.getElementById('res');
+        var s = '';
+        for (var i = 0; i < count; i++){
+            s+= '<span class="block"></span>';
+        }
+        res.innerHTML = s;
+        </script>
+    </head>
+        <body>
+           
+           <input id="count" class="count">
+           <button onclick="show();">button</button>
+           <div id="res">
+               <span class="block"></span>
+               <span class="block"></span>
+               <span class="block"></span>
+           </div>
+
+        </body>
+</html>

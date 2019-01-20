@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+       .val {
+           weidth: 65px;
+       }
+        </style>
+        <script>
+            function onCalc(){
+                var a = document.getElementById('a');
+                var b = document.getElementById('b');
+                a = Number(a.value);
+                b = Number(b.value);
+                var c = a + b;
+                var res = document.getElementById('res')
+                res.innerText = c;
+               
+            }
+        
+        </script>
+    </head>
+        <body>
+           <input id="a"class="vv">
+           <input id="b"class="vv">
+           <span id="c">=</span>
+           <span id="res"></span>
+           <br>
+           <button onclick="onCalc();">calcute</button>
+        </body>
+</html>
